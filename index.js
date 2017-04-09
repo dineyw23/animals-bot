@@ -127,7 +127,7 @@ function generateFlags() {
 
     result += animal1 + space[randSpaces()] + animal2 + space[randSpaces()] + animal3;   
 
-    result += '\n\n\n';
+    result += '\n\n\n\n';
     
     result += space[randSpaces()] + plant1 + space[randSpaces()] + plant3 + space[randSpaces()] + plant2; 
     
@@ -144,4 +144,5 @@ function randPlant() {
 function randSpaces(){
     return Math.floor(Math.random() * 8);
 }
-setInterval(tweet, 60000);
+
+setInterval(tweet, 60*60*1000);
