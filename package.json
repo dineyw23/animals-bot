@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dineyw23/flags.github.io.git"
+    "url": "git+https://github.com/dineyw23/animals.github.io.git"
   },
   "author": "Diney Wankhede",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dineyw23/flags.github.io/issues"
+    "url": "https://github.com/dineyw23/animals.github.io/issues"
   },
-  "homepage": "https://github.com/dineyw23/flags.github.io#readme",
+  "homepage": "https://github.com/dineyw23/animals.github.io#readme",
   "dependencies": {
     "node-emoji": "^1.5.1",
     "twit": "^2.2.5"
