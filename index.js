@@ -117,9 +117,10 @@ function generateFlags() {
 
     var result = '';
 
-    var plant1 = emoji.get(array[randPlant()]);
-    var plant2 = emoji.get(array[randPlant()]);
-    var plant3 = emoji.get(array[randPlant()]);
+    var plant1 = emoji.get(plants[randPlant()]);
+    var plant2 = emoji.get(plants[randPlant()]);
+    var plant3 = emoji.get(plants[randPlant()]);
+
     var animal1 = emoji.get(array[randAnimal()]);
     var animal2 = emoji.get(array[randAnimal()]);
     var animal3 = emoji.get(array[randAnimal()]);
