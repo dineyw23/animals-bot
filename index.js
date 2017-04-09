@@ -82,10 +82,65 @@ function generateFlags() {
         ':leopard:',
         ':cat2:'
         ];
- 
- var temp = array[Math.floor(Math.random() * array.length)];
- var animal = emoji.get(temp);
- return animal;
+
+    var plants = [
+        ':cherry_blossom:',
+        ':tulip:',
+        ':four_leaf_clover:',
+        ':rose:',
+        ':sunflower:',
+        ':hibiscus:',
+        ':maple_leaf:',
+        ':leaves:',
+        ':fallen_leaf:',
+        ':herb:',
+        ':mushroom:',
+        ':cactus:',
+        ':palm_tree:',
+        ':evergreen_tree:',
+        ':deciduous_tree:',
+        ':chestnut:',
+        ':seedling:',
+        ':blossom:'
+    ];
+    
+    var space = [
+     '',
+     ' ',
+     '     ',
+     '        ',
+     '  ',
+     '      ',
+     '              ',
+     '           '
+    ];
+
+    var result = '';
+
+    var plant1 = emoji.get(array[randPlant()]);
+    var plant2 = emoji.get(array[randPlant()]);
+    var plant3 = emoji.get(array[randPlant()]);
+    var animal1 = emoji.get(array[randAnimal()]);
+    var animal2 = emoji.get(array[randAnimal()]);
+    var animal3 = emoji.get(array[randAnimal()]);
+
+    result += animal1 + space[randSpaces()] + animal2 + space[randSpaces()] + animal3;   
+
+    result += '\n\n\n';
+    
+    result += space[randSpaces()] + plant1 + space[randSpaces()] + plant3 + space[randSpaces()] + plant2; 
+    
+    return result;
 }
 
-setInterval(tweet, 60000);
+function randAnimal(){
+    return Math.floor(Math.random() * 53);
+}
+
+function randPlant() {
+    return Math.floor(Math.random() * 18);
+}
+function randSpaces(){
+    return Math.floor(Math.random() * 8);
+}
+setInterval(tweet, 60*60*1000);
