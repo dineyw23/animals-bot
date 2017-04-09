@@ -143,4 +143,4 @@ function randPlant() {
 function randSpaces(){
     return Math.floor(Math.random() * 8);
 }
-setInterval(tweet, 60*60*1000);
+setInterval(tweet, 60000);
